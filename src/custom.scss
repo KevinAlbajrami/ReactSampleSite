@@ -1,0 +1,85 @@
+// Override default variables before the import
+$body-bg: rgb(242, 247, 243);
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+.bColor {
+  background-color: rgba(255, 255, 255, 0.219);
+  height: 70px;
+}
+.centered {
+  position: relative; /* or absolute */
+  top: 10%;
+  width: 100%;
+  height: 40%;
+}
+.footer {
+  background-color: rgba(0, 0, 0, 0.493);
+  color: white;
+  position: relative;
+  width: 100%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.txt {
+  position: absolute;
+  top: 285px;
+  left: 0;
+  width: 100%;
+}
+.btntxt {
+  position: absolute;
+  top: 350px;
+  padding-left: 300px;
+  width: 20%;
+  color: aqua;
+}
+.txtimg {
+  color: white;
+  font: bold 24px/45px Helvetica, Sans-Serif;
+  letter-spacing: -1px;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+}
+.rowFooter {
+  width: 100%;
+}
+
+.textDet {
+  font-size: 2vw;
+  text-decoration-color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navWdith {
+  width: 100%;
+}
+.photo {
+  height: 400px;
+  width: 100%;
+}
+
+.moto {
+  font-size: 20vw;
+  text-decoration-color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 1000;
+}
+
+.img-wrapper {
+  overflow: hidden;
+}
+
+img.hover-zoom {
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+img.hover-zoom:hover {
+  transform: scale(2);
+}
+
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";
